@@ -7,7 +7,9 @@ trigger:
 - Main
 
 pool:
-  vmImage: ubuntu-latest
+    name: vovaPCagent
+    demands: 
+    - Tag -equals agent1
 
 steps:
 - script: echo Hello, world!
