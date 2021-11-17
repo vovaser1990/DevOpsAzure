@@ -7,9 +7,9 @@ trigger:
 - Main
 
 pool:
-    name: vovaPCagent
-    demands: 
-    - Tag -equals agent1
+   name: Default
+   demands: 
+   - Agent.Name -equals vovaPCagent
 
 steps:
 - script: echo Hello, world!
