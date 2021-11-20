@@ -1,0 +1,47 @@
+import os ,uuid
+from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient, __version__
+
+local_path = "./Blob"
+os.mkdir(local_path)
+
+BlobServiceClient.from_connection_string('STORAGE1')
+blob_service_client2 = BlobServiceClient.from_connection_string('STORAGE2')
+
+
+container_client1 = blob_service_client1.create_container("storageaccount1container1")
+container_client2 = blob_service_client2.create_container("storageaccount2container1")
+
+container = ContainerClient.from_connection_string('STORAGE1',"vovatest")
+
+for i in range(100):
+    local_file_name = str(uuid.uuid4()) + ".txt"
+    upload_file_path = os.path.join(local_path, local_file_name)
+    cwd = os.getcwd()
+    # Write text to the file
+    file = open(upload_file_path, 'w')
+    file.write("Hello, World!")
+    file.close()
+    blob_client = blob_service_client1.get_blob_client(container="storageaccount1container1", blob=local_file_name)
+    with open(upload_file_path, "rb") as data:
+        blob_client.upload_blob(data)
+
+def save_blob(file_name,file_content):
+    download_file_path = os.path.join(local_path+"/BlobDownload/",file_name)
+    os.makedirs(os.path.dirname(download_file_path), exist_ok=True)
+    with open(download_file_path, "wb") as file:
+        file.write(file_content)
+
+blob_list = container.list_blobs()
+for blob in blob_list:
+    bytes = container_client1.get_blob_client(blob).download_blob().readall()
+    save_blob(blob.name, bytes)
+
+def upload_blob(file_name):
+    upload_file_path = os.path.join(local_path+"/BlobDownload/",file_name)
+    blob_client2 = blob_service_client2.get_blob_client(container="storageaccount2container1", blob=file_name)
+    with open(upload_file_path, "rb") as data:
+        blob_client2.upload_blob(data)
+
+blob_list = container.list_blobs()
+for blob in blob_list:
+    upload_blob(blob.name)
