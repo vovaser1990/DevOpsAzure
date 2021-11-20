@@ -1,0 +1,352 @@
+{
+  "properties": {
+    "lenses": {
+      "0": {
+        "order": 0,
+        "parts": {
+          "0": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "colSpan": 6,
+              "rowSpan": 4
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "options",
+                  "value": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/a8108c2b-496c-424d-8347-ecc8afb6384c/resourceGroups/VOVA_SER_RESOURCEGROUP/providers/Microsoft.Compute/virtualMachines/vovaservm"
+                          },
+                          "name": "Percentage CPU",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.compute/virtualmachines",
+                          "metricVisualization": {
+                            "displayName": "Percentage CPU",
+                            "resourceDisplayName": "vovaservm"
+                          }
+                        }
+                      ],
+                      "title": "Avg Percentage CPU for vovaservm",
+                      "titleKind": 1,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        }
+                      },
+                      "timespan": {
+                        "relative": {
+                          "duration": 86400000
+                        },
+                        "showUTCTime": false,
+                        "grain": 1
+                      }
+                    }
+                  },
+                  "isOptional": true
+                },
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/a8108c2b-496c-424d-8347-ecc8afb6384c/resourceGroups/VOVA_SER_RESOURCEGROUP/providers/Microsoft.Compute/virtualMachines/vovaservm"
+                          },
+                          "name": "Percentage CPU",
+                          "aggregationType": 4,
+                          "namespace": "microsoft.compute/virtualmachines",
+                          "metricVisualization": {
+                            "displayName": "Percentage CPU",
+                            "resourceDisplayName": "vovaservm"
+                          }
+                        }
+                      ],
+                      "title": "Avg Percentage CPU for vovaservm",
+                      "titleKind": 1,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              },
+              "filters": {
+                "MsPortalFx_TimeRange": {
+                  "model": {
+                    "format": "local",
+                    "granularity": "auto",
+                    "relative": "1440m"
+                  }
+                }
+              }
+            }
+          },
+          "1": {
+            "position": {
+              "x": 6,
+              "y": 4,
+              "colSpan": 6,
+              "rowSpan": 4
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "options",
+                  "value": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/a8108c2b-496c-424d-8347-ecc8afb6384c/resourceGroups/vova_ser_resourcegroup/providers/Microsoft.Storage/storageAccounts/vovaserstorageaccount2"
+                          },
+                          "name": "Transactions",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.storage/storageaccounts",
+                          "metricVisualization": {
+                            "displayName": "Transactions"
+                          }
+                        }
+                      ],
+                      "title": "Sum Transactions for vovaserstorageaccount2",
+                      "titleKind": 1,
+                      "visualization": {
+                        "chartType": 3,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        }
+                      },
+                      "timespan": {
+                        "relative": {
+                          "duration": 86400000
+                        },
+                        "showUTCTime": false,
+                        "grain": 1
+                      }
+                    }
+                  },
+                  "isOptional": true
+                },
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/a8108c2b-496c-424d-8347-ecc8afb6384c/resourceGroups/vova_ser_resourcegroup/providers/Microsoft.Storage/storageAccounts/vovaserstorageaccount2"
+                          },
+                          "name": "Transactions",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.storage/storageaccounts",
+                          "metricVisualization": {
+                            "displayName": "Transactions"
+                          }
+                        }
+                      ],
+                      "title": "Sum Transactions for vovaserstorageaccount2",
+                      "titleKind": 1,
+                      "visualization": {
+                        "chartType": 3,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              },
+              "filters": {
+                "MsPortalFx_TimeRange": {
+                  "model": {
+                    "format": "local",
+                    "granularity": "auto",
+                    "relative": "1440m"
+                  }
+                }
+              }
+            }
+          },
+          "2": {
+            "position": {
+              "x": 0,
+              "y": 4,
+              "colSpan": 6,
+              "rowSpan": 4
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "options",
+                  "value": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/a8108c2b-496c-424d-8347-ecc8afb6384c/resourceGroups/vova_ser_resourcegroup/providers/Microsoft.Storage/storageAccounts/vovaserstorageaccount1"
+                          },
+                          "name": "Transactions",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.storage/storageaccounts",
+                          "metricVisualization": {
+                            "displayName": "Transactions"
+                          }
+                        }
+                      ],
+                      "title": "Sum Transactions for vovaserstorageaccount1",
+                      "titleKind": 1,
+                      "visualization": {
+                        "chartType": 3,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        }
+                      },
+                      "timespan": {
+                        "relative": {
+                          "duration": 86400000
+                        },
+                        "showUTCTime": false,
+                        "grain": 1
+                      }
+                    }
+                  },
+                  "isOptional": true
+                },
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart"
+            }
+          }
+        }
+      }
+    },
+    "metadata": {
+      "model": {
+        "timeRange": {
+          "value": {
+            "relative": {
+              "duration": 24,
+              "timeUnit": 1
+            }
+          },
+          "type": "MsPortalFx.Composition.Configuration.ValueTypes.TimeRange"
+        },
+        "filterLocale": {
+          "value": "en-us"
+        },
+        "filters": {
+          "value": {
+            "MsPortalFx_TimeRange": {
+              "model": {
+                "format": "utc",
+                "granularity": "auto",
+                "relative": "24h"
+              },
+              "displayCache": {
+                "name": "UTC Time",
+                "value": "Past 24 hours"
+              },
+              "filteredPartIds": [
+                "StartboardPart-MonitorChartPart-2e11a4da-c617-4522-9c21-13951c099016",
+                "StartboardPart-MonitorChartPart-2e11a4da-c617-4522-9c21-13951c09901a"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "name": "VovaSerDashBord",
+  "type": "Microsoft.Portal/dashboards",
+  "location": "INSERT LOCATION",
+  "tags": {
+    "hidden-title": "VovaSerDashBord"
+  },
+  "apiVersion": "2015-08-01-preview"
+}
