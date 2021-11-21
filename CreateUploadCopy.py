@@ -4,14 +4,14 @@ from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient, _
 local_path = "C:/Users/vovaser1990/Desktop/Blobs"
 os.mkdir(local_path)
 
-BlobServiceClient.from_connection_string('STORAGE1')
-blob_service_client2 = BlobServiceClient.from_connection_string('STORAGE2')
+BlobServiceClient.from_connection_string('STORAGE_ACCOUNT_SECRET_KEY_1')
+blob_service_client2 = BlobServiceClient.from_connection_string('STORAGE_ACCOUNT_SECRET_KEY_2')
 
 
-container_client1 = blob_service_client1.create_container("storageaccount1container1")
-container_client2 = blob_service_client2.create_container("storageaccount2container1")
+container_client1 = blob_service_client1.create_container("container1")
+container_client2 = blob_service_client2.create_container("container2")
 
-container = ContainerClient.from_connection_string('STORAGE1',"vovatest")
+container = ContainerClient.from_connection_string('STORAGE_ACCOUNT_SECRET_KEY_1',"container1")
 
 for i in range(100):
     local_file_name = str(uuid.uuid4()) + ".txt"
@@ -21,7 +21,7 @@ for i in range(100):
     file = open(upload_file_path, 'w')
     file.write("Hello, World!")
     file.close()
-    blob_client = blob_service_client1.get_blob_client(container="storageaccount1container1", blob=local_file_name)
+    blob_client = blob_service_client1.get_blob_client(container="container1", blob=local_file_name)
     with open(upload_file_path, "rb") as data:
         blob_client.upload_blob(data)
 
@@ -38,7 +38,7 @@ for blob in blob_list:
 
 def upload_blob(file_name):
     upload_file_path = os.path.join(local_path+"/BlobDownload/",file_name)
-    blob_client2 = blob_service_client2.get_blob_client(container="storageaccount2container1", blob=file_name)
+    blob_client2 = blob_service_client2.get_blob_client(container="container2", blob=file_name)
     with open(upload_file_path, "rb") as data:
         blob_client2.upload_blob(data)
 
