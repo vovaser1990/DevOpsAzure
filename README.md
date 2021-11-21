@@ -4,9 +4,13 @@ My DevOps home task
 
 
 
--Work on Azure DevOps
+-Work on Azure DevOps.
 
 ![image](https://user-images.githubusercontent.com/61752360/142740857-1b6fa97b-1b10-4fc2-9201-96b4099e17d6.png)
+
+-Run a script in a server ,the script creates uploads and copy blobs.
+
+![image](https://user-images.githubusercontent.com/61752360/142752983-0654fca1-e1be-4e2a-a469-1c34d18d7549.png)
 
 
 
