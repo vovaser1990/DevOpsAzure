@@ -1,7 +1,7 @@
 import os ,uuid
 from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient, __version__
 
-local_path = "./Blob"
+local_path = "C:/Users/vovaser1990/Desktop/Blobs"
 os.mkdir(local_path)
 
 BlobServiceClient.from_connection_string('STORAGE1')
