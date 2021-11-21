@@ -10,11 +10,11 @@ My DevOps home task
 
 -Run a script in a server ,the script creates uploads and copy blobs.
 
-![image](https://user-images.githubusercontent.com/61752360/142752983-0654fca1-e1be-4e2a-a469-1c34d18d7549.png)
+![image](https://user-images.githubusercontent.com/61752360/142753412-563ed4f6-eaa7-4f56-afe7-b557e367b4fe.png)
 
 
 
 -Link to My metric dashboard - https://ms.portal.azure.com/#@microsoft.onmicrosoft.com/dashboard/arm/subscriptions/a8108c2b-496c-424d-8347-ecc8afb6384c/resourcegroups/dashboards/providers/microsoft.portal/dashboards/28c36e0a-5e97-44ca-88b0-93c3a6f5a451.
 
-![image](https://user-images.githubusercontent.com/61752360/142741445-fbc90e15-e54c-4c12-ab4e-ebfc5232711f.png)
+![image](https://user-images.githubusercontent.com/61752360/142753446-7e25bb11-797d-4fc6-923b-7a11ed91debe.png)
 
